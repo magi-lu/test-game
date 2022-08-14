@@ -191,7 +191,7 @@ function animate() {
     }
     if(enemy.velocity.y < 0){
        enemy.switchSprite('jump')
-    } else if (player.velocity.y > 0) {
+    } else if (.velocity.y > 0) {
        enemy.switchSprite('fall')
     }
      
@@ -227,6 +227,8 @@ if (
 //血量歸0判定
     if (enemy.health <= 0 || player.health <= 0 ){
         determineWinner({player, enemy ,timerld})
+        setTimeout(REset, 3000)
+        reset1()
     }
     
 }
