@@ -23,13 +23,13 @@ function determineWinner({player, enemy , timerld }) {
     document.querySelector('#displayText').style.display = 'flex'
     if(player.health === enemy.health){
       document.querySelector('#displayText').innerHTML = 'Tie'
-      } 
+      determineWinner = false} 
       else if (player.health > enemy.health) {
       document.querySelector('#displayText').innerHTML = 'Player 1 Win'
-      }
+      determineWinner = false}
       else if (player.health < enemy.health) {
       document.querySelector('#displayText').innerHTML = 'Player 2 Win'
-      }
+      determineWinner = false}
 }
 //時間判定
 let timer = 60
