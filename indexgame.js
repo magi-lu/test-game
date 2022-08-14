@@ -191,7 +191,7 @@ function animate() {
     }
     if(enemy.velocity.y < 0){
        enemy.switchSprite('jump')
-    } else if (.velocity.y > 0) {
+    } else if (enemy.velocity.y > 0) {
        enemy.switchSprite('fall')
     }
      
