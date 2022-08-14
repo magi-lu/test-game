@@ -47,5 +47,17 @@ function decreaseTimer(){
     if (timer === 0){
 
     determineWinner({player, enemy, timerld})
+    setTimeout(REset, 3000)
+    reset1()
    }
+}
+//重整
+function REset(){
+    location.reload()
+}
+function reset1(){
+    document.querySelector('#reset1').style.display = 'flex'
+    document.querySelector('#reset1').innerHTML = '3秒後自動重新整理'
+    document.getElementById('#reset1').style.fontSize = '30px'
+    document.getElementById('#reset1').style.textShadow = "2px 2px 1px Black"
 }
